@@ -1,0 +1,39 @@
+{
+  "name": "ramesaliyev",
+  "version": "1.0.0",
+  "description": "A personal card for Rames Aliyev (@ramesaliyev)",
+  "main": "/bin/card.js",
+  "bin": {
+    "ramesaliyev": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramesaliyev/ramesaliyev.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Rames Aliyev <creator@ramesaliyev.com> (https://ramesaliyev.com)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "2.1.0",
+    "chalk": "2.4.1",
+    "standard": "12.0.1"
+  }
+}
